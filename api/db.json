@@ -1,0 +1,38 @@
+{
+  "streams": [
+    {
+      "title": "my Stream",
+      "description": "Ha this is it",
+      "id": 1
+    },
+    {
+      "title": "Unknown",
+      "description": "show about nothing",
+      "id": 2
+    },
+    {
+      "title": "hagop",
+      "description": "he is a moron",
+      "userId": "117231052644733082257",
+      "id": 7
+    },
+    {
+      "title": "i made this too",
+      "description": "React js is the best",
+      "userId": "117231052644733082257",
+      "id": 9
+    },
+    {
+      "title": "after Change",
+      "description": "i am not sure mate",
+      "userId": "117231052644733082257",
+      "id": 10
+    },
+    {
+      "title": "mgooo",
+      "description": "Working? is itt",
+      "userId": "117231052644733082257",
+      "id": 11
+    }
+  ]
+}

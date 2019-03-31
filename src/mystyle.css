@@ -1,0 +1,38 @@
+.fontify {
+  font-size: 19px;
+  font-family: "Courier New";
+}
+.fontifyr {
+  font-size: 18px;
+  font-family: "Courier New";
+  color: cornflowerblue !important;
+}
+.cur {
+  cursor: pointer;
+}
+.backk {
+  font-size: 35px;
+  font-family: "Courier New";
+  color: dodgerblue;
+}
+.f1 {
+  font-family: "Courier New";
+  font-size: inherit;
+}
+.fontifyw {
+  font-size: 19px;
+  font-family: "Courier New";
+  color: white;
+}
+.active a{
+  background-color : crimson !important;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Courier New";
+}
