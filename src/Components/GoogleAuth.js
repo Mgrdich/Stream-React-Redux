@@ -65,7 +65,7 @@ class GoogleAuth extends Component {
 const mapStateToProps = state => {
   return { isSignedIn: state.authReducer.isSignedIn };
 };
-
+//instead of the below method you can add mapDispatch method and bind action creator to do the work but this is such an easy way
 export default connect(
   mapStateToProps,
   { SignIn, SignOut }
