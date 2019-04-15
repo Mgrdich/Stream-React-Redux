@@ -14,7 +14,7 @@ export default function createValidator(schema) {
       const message = cur.message;
       if (Object.prototype.hasOwnProperty.call(allErrors, path)) {
         //to check if allError object has a certian property
-        allErrors[path] += message; //error. its wring doing is here
+        allErrors[path] += message; //error. its wrong doing is here with the key of that field
       } else {
         allErrors[path] = message;
       }
