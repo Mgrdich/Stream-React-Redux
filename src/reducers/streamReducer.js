@@ -11,7 +11,8 @@ import {
 export default (state = {}, action) => {
   switch (action.type) {
     case FETCH_STREAMS:{
-      return {...state,..._.mapKeys(action.payload,'id')} //this is done so later you can pick more easily and when
+     return Object.assign({...state
+      },ArraykeyID(action.payload.data, "id")); //this is done so later you can pick more easily and when
       //converting to array you will have no problem
     }
     case FETCH_STREAM: {
@@ -24,9 +25,21 @@ export default (state = {}, action) => {
       return { ...state, [action.payload.id]: action.payload };
     }
     case DELETE_STREAM: {
-     return _.omit(state,action.payload)
+     return DeleteProperty(state,action.payload);//since it will give us the id from the action Creator
     }
     default:
       return state;
   }
 };
+//it is also recommended to put this functions in the utility functions.
+function ArraykeyID(array, key) {
+  return array.reduce((acc, cur) => {
+    acc[cur[key]] = cur;
+    return acc;
+  }, {});
+}
+function DeleteProperty(obj, key) { //it is like omit it deletes
+  let ob = { ...obj };
+  delete ob[key];
+  return ob;
+}
